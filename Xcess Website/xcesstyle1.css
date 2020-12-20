@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-shadow: 1rem 2rem 4rem;
+    min-width: 60rem;
+    margin-top: 25px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*-----Form-----*/
+#wrapper {
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 100%;
+    height: 10%;
+    max-width: 40rem;
+    background-color: aliceblue;
+    position: relative;
+    padding: 10rem 0;
+    box-shadow: 0 1px 1.5rem black;
+    border-radius: 25px;
+    z-index: 1;
+    margin-top: 25px;
+}
+
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5rem;
+    background: mediumpurple;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    z-index: -1;
+
+
+}
+
+.form-heading {
+    color: white;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form {
+    transform: translateX(10rem);
+    padding: 2rem 0;
+    background-color: mediumpurple;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1rem;
+    border-radius: initial;
+    transform: initial;
+}
+
+
+.input-user {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+}
+
+.input-user input {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: brown;
+}
+
+
+.input-user > i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: darkturquoise;
+
+}
+
+.input-user .bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 1px;
+}
+
+.input-user .bar::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    transition: width 650ms;
+}
+
+
+.input-user input:focus + .bar::before {
+    width: 100%;
+
+}
+
+.input-user button {
+    margin: 2rem auto;
+    padding: 1rem 5rem;
+    background-color: darkturquoise;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 3rem;
+
+}
+
+.input-user button:focus,
+.input-user button:hover {
+    background: lime;
+}
+
+.switch-login {
+    text-align: center;
+}
+
+.switch-login a {
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 1.5rem;
+}
+
+.switch-login a span {
+    color: azure;
+}
+
+.switch-login a span:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid aquamarine;
+}
+
+
+/*------End of Form--------*/
+
+/*--------Header CSS--------*/
+header .header-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: mediumpurple;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    min-height: 40px;
+    border-bottom: slategray 3px solid;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    margin-left: 2px;
+}
+
+header #logo {
+    float: left;
+}
+
+header #logo h1 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+header nav {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+header input,
+header .search_button {
+    margin-top: 11px;
+    float: right;
+}
+
+header .current a {
+    color: lightblue;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+    font-weight: bolder;
+}
+
+/*-------end of Header------*/
+
+/*---------Boxes---------*/
+
+#boxes {
+    margin: auto 25px;
+}
+
+#boxes .box {
+    background-color: aliceblue;
+    margin-left: 2px;
+    margin-right: 2px;
+    float: left;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+/*-----End of Boxes----*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.profile {
+    width: 100%;
+    margin: auto;
+    background: slate;
+    border-radius: 16px;
+}
+
+.info {
+    color: seagreen;
+    margin-right: 16px;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.skill-bar {
+    background-color: aqua;
+    border-radius: 16px;
+}
+
+.progress-bar {
+    padding: 0.1em 16px;
+    border-radius: 16px;
+    text-align: center;
+    color: black;
+    background-color: mediumpurple;
+}
+
+img {
+    display: flex;
+    height: 50vh;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+
+#boxes .box.photos-container {
+    width: 100px;
+    height: 20px;
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    padding: none;
+}
+
+
+.posts {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.post {
+    width: 95%;
+    background: white;
+    margin: 10px;
+    border-radius: 16px;
+    float: left
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+}
+
+.post h2 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.post p {
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+@media (max-width:600px) {
+    .post {
+        width: 90%;
+        margin: 2%;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer p {
+    height: 10px;
+    padding: 25px;
+}

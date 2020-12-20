@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: 1rem 2rem 4rem;
+    min-width: 60rem;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*--------Header CSS--------*/
+header .header-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: mediumpurple;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    min-height: 40px;
+    border-bottom: slategray 3px solid;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    margin-left: 2px;
+}
+
+header #logo {
+    float: left;
+}
+
+header #logo h1 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+header nav {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+header input, header .search_button {
+    margin-top: 11px;
+    float: right;
+}
+ 
+header .current a {
+    color: lightblue;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+    font-weight: bolder;
+}
+
+/*-------end of Header------*/
+
+/*---------Box section---------*/
+
+#boxes {
+    margin: auto 25px;
+}
+
+#boxes .box {
+    background-color: aliceblue;
+    margin-left: 2px;
+    margin-right: 2px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 120vh;
+    padding: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: black;
+}
+
+/*-------end of box section------*/
+
+img {
+    width: 90%;
+    height: 45vh;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer p {
+    height: 10px;
+    padding: 25px;
+}

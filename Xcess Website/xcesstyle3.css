@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 100;
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*--------Header CSS--------*/
+header .header-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: mediumpurple;
+    padding: 10px;
+    min-height: 40px;
+    border-bottom: slategray 3px solid;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    margin-left: 2px;
+}
+
+header #logo {
+    float: left;
+}
+
+header #logo h1 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+header nav {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+header input,
+header .search_button {
+    margin-top: 11px;
+    float: right;
+}
+
+header .current a {
+    color: lightblue;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: darkgoldenrod;
+    font-weight: bolder;
+}
+
+/*-------end of Header------*/
+
+/*--------Chatroom----------*/
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: lightgray;
+    color: black;
+}
+
+.container {
+    width: 60%;
+    height: 95%;
+    display: flex;
+    border-radius: 35px;
+    min-width: 60rem;
+}
+
+.users,
+#chat-screen {
+    flex-grow: 1;
+    height: 100%;
+    min-width: 50%;
+}
+
+.users {
+    background-color: darkslategrey;
+}
+
+#chat-screen {
+    background-color: goldenrod;
+    background-size: cover;
+}
+
+.users header {
+    background-color: mediumpurple;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.users ul {
+    list-style-type: none;
+}
+
+.users ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid slateblue;
+}
+
+.users ul li:nth-last-child {
+    border-bottom: none;
+}
+
+.users header h1 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.avatar img {
+    width: 7.5rem;
+    height: 7.6rem;
+    border-radius: 50%;
+}
+
+.users .avatar {
+    display: flex;
+    margin: auto 0;
+    padding: 1rem;
+    position: relative;
+}
+
+.username {
+    font-size: 3rem;
+}
+
+.online {
+    background-color: limegreen;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 6.5rem;
+    bottom: 1.5rem;
+}
+
+.offline {
+    background-color: red;
+}
+
+.users ul li .online {
+    border: 2px solid white;
+}
+
+.users-list {
+    flex-grow: 2;
+    margin: auto 0;
+}
+
+.text {
+    font-size: 12px;
+    margin: auto 0;
+}
+
+.timestamp {
+    font-size: 12px;
+    flex-grow: 15px;
+    margin: auto 0;
+}
+
+#chat-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    color: black;
+}
+
+#chat-screen .msg-compose {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-screen .msg-compose textarea {
+    flex-grow: 2;
+    margin: 0 1rem;
+    resize: none;
+    border: none;
+    padding-top: 5px;
+    height: 2rem;
+}
+
+#chat-screen .msg-compose textarea:focus {
+    outline: none;
+}
+
+#chat-screen .msg-compose i {
+    color: #c0c0c0;
+    cursor: pointer;
+}
+
+#messages {
+    overflow: auto;
+    flex-grow: 2;
+    padding: 1rem;
+}
+
+#messages article {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+#messages article .avatar {
+    margin-right: 1rem;
+}
+
+#messages .right .avatar {
+    margin-right: 0;
+}
+
+.msg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.msg .pointer {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1rem 1.5rem 0;
+    border-color: transparent white transparent transparent;
+    margin: auto 0
+}
+
+.inner-msg {
+    background-color: white;
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 0 4px 4px 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: auto 0;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.right .msg {
+    flex-direction: row-reverse;
+}
+
+.right .msg .pointer {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1.5rem 1.5rem 0 0;
+    border-color: white transparent transparent transparent;
+    margin: auto 0;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer p {
+    height: 10px;
+    padding: 25px;
+}
